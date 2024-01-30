@@ -1,0 +1,98 @@
+:root{
+    --blanco:#FFFFFF;
+    --negro:#000000;
+    --color1:#001F41;
+    --color2:#007afd7d;
+    --fuentePrincipal:'Staatliches',cursive;
+
+}
+
+html{
+    box-sizing: border-box;
+
+    font-size: 62.5%;
+    /* scroll-snap-type: y mandatory; */
+}
+
+*,*::before, *::after{
+    box-sizing: inherit;
+}
+
+body{
+    font-size: 1.6rem;
+    line-height: 1.5;
+}
+
+h1{
+    font-style: var(--fuentePrincipal);
+    font-size: 1.5rem;
+}
+
+a{
+    text-decoration: none;
+}
+
+p{
+    color: var(--negro);
+    font-size: 2rem;
+}
+
+.encabezado{
+    background-color: var(--color2);
+    height: auto;
+    display: flex;
+    justify-content: center;
+}
+
+/* .seccion{
+    background-image: url(../imgs/advertising-2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 400px;
+    position: relative;
+    margin-bottom: 3rem;
+    background-position: center ;
+} */
+
+.seccion{
+    background-color: rgba(0, 0, 0, 0.5);
+    height: auto;
+    display: flex;
+    justify-content: center;
+    padding: 2rem 0 2rem 0;
+}
+
+.grid{
+    padding-top: 2rem;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 2rem;
+}
+
+@media (min-width:768px){
+    .grid{
+        grid-template-columns: repeat(3,1fr);
+    }
+}
+
+
+.contenedor{
+    background-color: var(--color2); 
+    padding: 2rem;
+    box-shadow: 0 0 20px var(--negro);
+    transition: transform 0.3s;
+}
+
+.contenedor:hover {
+    transform: scale(1.05);
+}
+
+.contenedor_imagen{
+    width: 30rem;
+}
+
+.contenedor_informacion{
+    display: flex;
+    justify-content: center;
+}
+
