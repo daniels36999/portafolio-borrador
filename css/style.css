@@ -104,3 +104,15 @@ a{
     font-weight: bold;
 }
 
+
+.footer{
+    background-color: var(--negro);
+    padding: 0.5rem;
+}
+.footer__texto{
+    font-family: var(--fuentePrincipal);
+    text-align: center;
+    font-weight: normal;
+    color: var(--blanco);
+}
+
