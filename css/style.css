@@ -88,10 +88,15 @@ a{
     padding: 5rem 0 5rem 0;
     display: grid;
     grid-template-columns: repeat(2,1fr);
-    gap: 4rem 6rem;
-    
-    
+    gap: 4rem 6rem;  
 }
+
+.grid_pwb::after {
+    content: '';
+    grid-row: 2; /* Especifica que este pseudo-elemento está en la primera fila */
+    grid-column: 1 / -1; /* Ocupa todas las columnas en la primera fila */
+    border-bottom: 4px solid #b4a200; /* Ajusta el estilo y color del borde según sea necesario */
+  }
 
 @media (min-width:768px){
     .grid{
@@ -139,5 +144,19 @@ a{
     font-weight: normal;
     font-size: 1rem;
     color: var(--blanco);
+}
+
+
+/* POWER BI */
+.seccion_pwb{
+    background-image: url(../imgs/Baground2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: auto;
+    position: relative;
+    background-position: center ;
+
+    display: flex;
+    justify-content: center;
 }
 
