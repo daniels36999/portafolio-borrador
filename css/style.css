@@ -1,8 +1,9 @@
 :root{
     --blanco:#FFFFFF;
     --negro:#000000;
-    --color1:#001F41;
+    --color1:#9475cb;
     --color2:#007afd7d;
+    --color3:#00ff517d;
     --fuentePrincipal:'Staatliches',cursive;
 
 
@@ -26,7 +27,7 @@ body{
 
 h1{
     font-style: var(--fuentePrincipal);
-    font-size: 1.5rem;
+    font-size: 2.5rem;
 }
 
 p{
@@ -37,16 +38,38 @@ p{
 
 a{
     text-decoration: none;
+    color: var(--blanco);
 }
 
-
-
 .encabezado{
-    background-color: var(--color2);
+    background-color: var(--blanco);
     height: auto;
     display: flex;
     justify-content: center;
 }
+
+.titulo{
+    padding: 1rem;
+}
+
+.opciones{
+    background-color: var(--color1);
+    padding: 2rem 0;
+}
+
+.opciones_navPrincipal{
+    font-family: var(--fuentePrincipal);
+    font-size: 2.5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.navTexto{
+    margin: 0 3rem;
+}
+
+
 
 .seccion{
     background-image: url(../imgs/Baground1.jpg);
@@ -65,7 +88,7 @@ a{
     padding: 5rem 0 5rem 0;
     display: grid;
     grid-template-columns: repeat(2,1fr);
-    gap: 5rem;
+    gap: 4rem 6rem;
     
     
 }
@@ -78,11 +101,11 @@ a{
 
 
 .contenedor{
-    background-color: rgba(120, 117, 117, 0.5);
+    background-color: rgba(255, 255, 255, 0.5);
     padding: 2rem;
     box-shadow: 0 0 15px var(--negro);
     transition: transform 0.3s;
-    max-width: 40rem;
+    max-width: 35rem;
 }
 
 .contenedor:hover {
@@ -102,6 +125,7 @@ a{
 .contenedor_texto{
     font-family: var(--fuentePrincipal);
     font-weight: bold;
+    color: var(--negro);
 }
 
 
@@ -113,6 +137,7 @@ a{
     font-family: var(--fuentePrincipal);
     text-align: center;
     font-weight: normal;
+    font-size: 1rem;
     color: var(--blanco);
 }
 
