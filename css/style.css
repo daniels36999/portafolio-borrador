@@ -4,6 +4,7 @@
     --color1:#9475cb;
     --color2:#007afd7d;
     --color3:#00ff517d;
+    --color4:#7b7211;
     --fuentePrincipal:'Staatliches',cursive;
 
 
@@ -148,6 +149,16 @@ a{
 
 
 /* POWER BI */
+
+.mensaje{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    font-size: 1rem;
+    font-style: italic;
+}
 .seccion_pwb{
     background-image: url(../imgs/Baground2.png);
     background-repeat: no-repeat;
@@ -160,3 +171,38 @@ a{
     justify-content: center;
 }
 
+.opciones_PWB{
+    background-color: var(--color4);
+    padding: 2rem 0;
+}
+
+#contenedor-imagen-maximizada {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 9999;
+    overflow-y: auto;
+}
+
+#contenedor-imagen-maximizada img {
+    display: block;
+    margin: auto;
+    padding: 6rem 0;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+#boton-restaurar {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    padding: 10px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #3e416884;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
